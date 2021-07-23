@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: Roboto-Black;
+    src: url(../fonts/Roboto-Black.ttf);
+}
+/* CSS reset & general styling */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    letter-spacing: -.5px;
+}
+
+/* ==================== Top section */
+header {
+    display: flex;
+}
+header #logo {
+    padding: 40px 15px 0 40px;
+    max-width: 45px;
+    align-self: flex-start;
+}
+header h3 {
+    padding-top: 40px;
+    font-family: Roboto-Black;
+    font-size: 1.6em;
+}
+header p {
+    font-size: 0.85em;
+}
+header #space, header #person {
+    max-width: 50vw;
+    position: absolute;
+    right: 0;
+}
