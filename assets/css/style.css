@@ -15,19 +15,19 @@
     margin: 0;
     padding: 0;
     font-family: Roboto;
+    letter-spacing: -.5px;
 }
 
 /* ==================== Header (logo and top right images) */
 header {
     display: flex;
-    letter-spacing: -.5px;
 }
 header #logo {
     padding: 40px 15px 0 40px;
     max-width: 45px;
     align-self: flex-start;
 }
-header h3 {
+header h1 {
     padding-top: 40px;
     font-family: Roboto-Black;
     font-size: 1.6em;
@@ -60,6 +60,70 @@ header #space, header #person {
 }
 /* ==================== Gallery section */
 #gallery {
-    min-height: 130vh;
+    min-height: 120vh;
     background: url(../img/images.jpg) top/contain no-repeat;
+}
+/* ==================== Intro section */
+#intro article:first-of-type {
+    padding: 0 14vw;
+    display: flex;
+    align-items: start;
+}
+#intro article:first-of-type h1 {
+    max-width: 30%;
+    font-size: 3em;
+    flex-shrink: .6;
+}
+#intro article:first-of-type p {
+    max-width: 50%;
+    padding: 2vh 0 0 2vw;
+    line-height: 2em;
+}
+#intro article:first-of-type h1 img {
+    display: inline-block;
+    max-width: 1.1em;
+}
+#intro article:last-of-type > h1 {
+    padding: 30vh 40vw 25vh 14vw;
+    font-size: 3em;
+}
+/* ---------- Lessons learned article */
+#learned {
+    padding-left: 8vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+#learned div {
+    max-width: 25vw;
+    padding: 5vh 5vw;
+}
+#learned img {
+    max-width: 30px;
+    padding-right: 15px;
+    vertical-align: bottom;
+}
+#learned div img, #learned div h1 {
+    display: inline-block;
+}
+#learned div h1 {
+    font-size: 1em;
+}
+#learned div p {
+    padding: 20px 0 0 50px;
+    line-height: 2em;
+    font-size: 0.9em;
+}
+/* ==================== Challenge section */
+#challenge article {
+    text-align: center;
+}
+#challenge article h1 {
+    padding-top: 20vh;
+    font-size: 3em;
+}
+#challenge article p {
+    padding: 5vh 0 25vh 0;
+    max-width: 50vw;
+    display: inline-block;
+    font-size: 1.2em;
 }
