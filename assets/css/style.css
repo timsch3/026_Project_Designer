@@ -10,6 +10,10 @@
     font-family: Roboto-Light;
     src: url(../fonts/Roboto-Light.ttf);
 }
+@font-face {
+    font-family: Roboto-Thin;
+    src: url(../fonts/Roboto-Thin.ttf);
+}
 /* CSS reset & general styling */
 * {
     margin: 0;
@@ -117,13 +121,54 @@ header #space, header #person {
 #challenge article {
     text-align: center;
 }
-#challenge article h1 {
+#challenge article:first-of-type h1 {
     padding-top: 20vh;
     font-size: 3em;
 }
 #challenge article p {
-    padding: 5vh 0 25vh 0;
+    padding: 5vh 0 10vh 0;
     max-width: 50vw;
     display: inline-block;
     font-size: 1.2em;
+    font-family: Roboto-Thin;
+    font-weight: bold;
+}
+/* ---------- Challenge steps */
+#challengeSteps figure {
+    display: flex;
+    text-align: left;
+    padding-bottom: 15vh;
+}
+#challengeSteps figure > img {
+    display: inline-block;
+    max-width: 40vw;
+    padding: 0 8vw;
+    align-self: flex-end;
+}
+#challengeSteps figure > div {
+    align-self: flex-start;
+}
+#challengeSteps figure div h1 {
+    color: #dddddd;
+    font-size: 3em;
+    padding-bottom: 8vh;
+}
+#challengeSteps figure div img {
+    padding-bottom: 1em;
+}
+#challengeSteps figure div p {
+    padding-top: 1em;
+    line-height: 2em;
+}
+#challengeSteps figure h2, #challengeSteps figure p {
+    font-size: 1em;
+}
+#challengeSteps figure:nth-of-type(odd) div {
+    padding-right: 5vw;
+}
+#challengeSteps figure:nth-of-type(even) div {
+    padding-left: 8vw;
+}
+#challengeSteps figure:nth-of-type(even) > img {
+    padding: 0 5vw 0 8vw;
 }
