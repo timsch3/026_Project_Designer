@@ -14,15 +14,13 @@
     font-family: Roboto-Thin;
     src: url(../fonts/Roboto-Thin.ttf);
 }
-/* CSS reset & general styling */
+/* CSS reset */
 * {
     margin: 0;
     padding: 0;
     font-family: Roboto;
     letter-spacing: -.5px;
 }
-/* Left side standard padding */
-
 /* ==================== Header (top left logo and top right images) */
 header {
     display: flex;
@@ -205,9 +203,6 @@ header #person {
     font-size: 1.2em;
     border: 1px solid #ddddddaa;
     box-shadow: 0 0 10px 10px #dddddd44;
-}
-#subscribe input[type="email"]:focus {
-    outline-offset: 0;
 }
 #subscribe input[type="submit"] {
     margin-top: 4vh;
